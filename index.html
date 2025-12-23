@@ -10,6 +10,42 @@
 
     <!-- Lucide (ícones) via CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
+<style>
+  /* ====== AJUSTES PARA IMPRESSÃO ====== */
+  @media print {
+
+    .print-hidden {
+      display: none !important;
+    }
+
+    .print-block {
+      display: block !important;
+    }
+
+    body {
+      background: white !important;
+      color: black !important;
+    }
+
+    .avoid-break {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    h1 { font-size: 22px !important; }
+    h2 { font-size: 18px !important; }
+    h3 { font-size: 15px !important; }
+
+    p, li, span {
+      font-size: 12px !important;
+      line-height: 1.4 !important;
+    }
+
+    @page {
+      margin: 1.5cm;
+    }
+  }
+</style>
   </head>
 
   <body class="min-h-screen bg-slate-50 p-4 md:p-8 font-sans print:bg-white print:p-0">
