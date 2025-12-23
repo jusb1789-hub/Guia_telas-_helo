@@ -1,0 +1,361 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia de Telas Conscientes</title>
+
+    <!-- Tailwind via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Lucide (ícones) via CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+  </head>
+
+  <body class="min-h-screen bg-slate-50 p-4 md:p-8 font-sans print:bg-white print:p-0">
+    <div class="max-w-4xl mx-auto bg-white shadow-xl rounded-2xl overflow-hidden print:shadow-none print:rounded-none">
+
+      <!-- Header -->
+      <header class="bg-gradient-to-r from-teal-600 to-emerald-600 p-8 text-white text-center print:bg-white print:text-black print:border-b-2 print:border-teal-600 print:p-4">
+        <h1 class="text-3xl font-bold mb-2 print:text-2xl">Guia de Telas Conscientes</h1>
+        <p class="text-teal-100 font-medium text-lg print:text-slate-600 print:text-base">
+          Orientações personalizadas para a rotina da Helô
+        </p>
+      </header>
+
+      <!-- Tabs (hide on print) -->
+      <div class="flex border-b border-slate-200 print:hidden">
+        <button id="tab-guia"
+          class="flex-1 py-4 text-sm font-bold uppercase tracking-wide transition-colors text-teal-600 border-b-2 border-teal-600 bg-teal-50/50">
+          Conteúdo Recomendado
+        </button>
+        <button id="tab-regras"
+          class="flex-1 py-4 text-sm font-bold uppercase tracking-wide transition-colors text-slate-400 hover:text-slate-600">
+          Como e Quando Usar
+        </button>
+      </div>
+
+      <!-- Content area -->
+      <div class="p-6 md:p-8 bg-slate-50/30 print:bg-white print:p-4">
+
+        <!-- GUIA -->
+        <section id="view-guia" class="block print:block">
+          <div class="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 flex items-start gap-3 print:bg-white print:border-slate-300">
+            <div class="mt-1 flex-shrink-0 text-blue-500">
+              <i data-lucide="info"></i>
+            </div>
+            <p class="text-sm text-blue-800 print:text-slate-700">
+              <strong>Objetivo Central:</strong> Apoiar transições (troca de atividade), ajudar na organização emocional e reduzir a dependência do celular.
+              A tela é um <em>apoio</em>, não o regulador principal.
+            </p>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-8 print:gap-4">
+
+            <!-- Séries -->
+            <div>
+              <div class="flex items-center gap-2 mb-4 mt-2 pb-2 border-b border-orange-200">
+                <div class="text-orange-500"><i data-lucide="sun"></i></div>
+                <h2 class="text-xl font-bold text-slate-800">Séries & Desenhos</h2>
+              </div>
+              <p class="text-sm text-slate-500 mb-4 italic print:text-slate-600">Uso orientado. Episódios curtos.</p>
+
+              <!-- Card -->
+              <div class="bg-white rounded-xl shadow-sm border-l-4 border-blue-500 p-4 mb-4 hover:shadow-md transition-shadow duration-200 print:shadow-none print:border">
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="p-2 rounded-full bg-blue-100 print:bg-transparent">
+                      <i data-lucide="sun" class="text-blue-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Bluey</h3>
+                  </div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded print:border print:border-slate-200">Uso Diário</span>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Flexibilidade</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Empatia</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Dinâmica Familiar</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">Trabalha a frustração de forma leve e realista. Ótimo para entender resolução de conflitos.</p>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-sm border-l-4 border-indigo-500 p-4 mb-4 hover:shadow-md transition-shadow duration-200 print:shadow-none print:border">
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="p-2 rounded-full bg-indigo-100 print:bg-transparent">
+                      <i data-lucide="sun" class="text-indigo-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Hilda</h3>
+                  </div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded print:border print:border-slate-200">Aventura</span>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Autonomia</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Coragem</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Curiosidade</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">Narrativa madura com começo, meio e fim bem definidos. Estimula a imaginação estruturada.</p>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-sm border-l-4 border-green-500 p-4 mb-4 hover:shadow-md transition-shadow duration-200 print:shadow-none print:border">
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="p-2 rounded-full bg-green-100 print:bg-transparent">
+                      <i data-lucide="brain" class="text-green-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Shaun, o Carneiro</h3>
+                  </div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded print:border print:border-slate-200">Sem Falas</span>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Leitura Social</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Causa e Efeito</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">Por não ter falas, força a criança a ler o contexto social e as regras implícitas.</p>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-sm border-l-4 border-teal-400 p-4 mb-4 hover:shadow-md transition-shadow duration-200 print:shadow-none print:border">
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="p-2 rounded-full bg-teal-100 print:bg-transparent">
+                      <i data-lucide="moon" class="text-teal-400"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Puffin Rock</h3>
+                  </div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded print:border print:border-slate-200">Calmante</span>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Desaceleração</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Regulação</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">Ritmo lento e previsível. A melhor escolha para transições ou redução de agitação.</p>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-sm border-l-4 border-purple-400 p-4 mb-4 hover:shadow-md transition-shadow duration-200 print:shadow-none print:border">
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="p-2 rounded-full bg-purple-100 print:bg-transparent">
+                      <i data-lucide="heart" class="text-purple-400"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Princesa Sofia</h3>
+                  </div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded print:border print:border-slate-200">Social</span>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Decisões</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Consequências</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">Apesar do tema, é educativo sobre habilidades sociais e empatia. (Selecione os episódios).</p>
+              </div>
+
+            </div>
+
+            <!-- Filmes -->
+            <div>
+              <div class="flex items-center gap-2 mb-4 mt-2 pb-2 border-b border-purple-200">
+                <div class="text-purple-500"><i data-lucide="play"></i></div>
+                <h2 class="text-xl font-bold text-slate-800">Filmes Selecionados</h2>
+              </div>
+              <p class="text-sm text-slate-500 mb-4 italic print:text-slate-600">Uso pontual. Sempre mediado.</p>
+
+              <div class="bg-white rounded-xl shadow-sm border-l-4 border-orange-400 p-4 mb-4 hover:shadow-md transition-shadow duration-200 print:shadow-none print:border">
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="p-2 rounded-full bg-orange-100 print:bg-transparent">
+                      <i data-lucide="play" class="text-orange-400"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Moana</h3>
+                  </div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded print:border print:border-slate-200">Jornada</span>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Identidade</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Perseverança</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">Visual organizado e mensagem clara de autonomia e escuta interna.</p>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-sm border-l-4 border-pink-500 p-4 mb-4 hover:shadow-md transition-shadow duration-200 print:shadow-none print:border">
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="p-2 rounded-full bg-pink-100 print:bg-transparent">
+                      <i data-lucide="heart" class="text-pink-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Encanto</h3>
+                  </div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded print:border print:border-slate-200">Família</span>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Pertencimento</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Expectativas</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">Atenção: carga emocional alta. Usar apenas quando a Helô estiver bem regulada.</p>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-sm border-l-4 border-emerald-500 p-4 mb-4 hover:shadow-md transition-shadow duration-200 print:shadow-none print:border">
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="p-2 rounded-full bg-emerald-100 print:bg-transparent">
+                      <i data-lucide="moon" class="text-emerald-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Meu Amigo Totoro</h3>
+                  </div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded print:border print:border-slate-200">Sensorial</span>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Segurança</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Vínculo</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">Ritmo lento, poucas falas e visual suave. Excelente para autorregulação.</p>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-sm border-l-4 border-red-400 p-4 mb-4 hover:shadow-md transition-shadow duration-200 print:shadow-none print:border">
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="p-2 rounded-full bg-red-100 print:bg-transparent">
+                      <i data-lucide="brain" class="text-red-400"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">O Castelo Animado</h3>
+                  </div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded print:border print:border-slate-200">Fantasia</span>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Flexibilidade</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Empatia</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">Estimula a imaginação de forma organizada. Ritmo adequado para a idade.</p>
+              </div>
+
+              <div class="bg-white rounded-xl shadow-sm border-l-4 border-yellow-500 p-4 mb-4 hover:shadow-md transition-shadow duration-200 print:shadow-none print:border">
+                <div class="flex justify-between items-start mb-2">
+                  <div class="flex items-center gap-2">
+                    <div class="p-2 rounded-full bg-yellow-100 print:bg-transparent">
+                      <i data-lucide="check-circle-2" class="text-yellow-500"></i>
+                    </div>
+                    <h3 class="font-bold text-lg text-slate-800">Matilda</h3>
+                  </div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-400 bg-slate-100 px-2 py-1 rounded print:border print:border-slate-200">Superação</span>
+                </div>
+                <div class="mb-3 flex flex-wrap gap-2">
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Justiça</span>
+                  <span class="text-xs font-medium text-slate-600 bg-slate-50 border border-slate-200 px-2 py-0.5 rounded-full print:bg-white">Autonomia</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">Valorização das capacidades pessoais. Assistir com mediação (adulto junto).</p>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- REGRAS -->
+        <section id="view-regras" class="hidden print:block print:mt-8 print:pt-4 print:border-t print:border-slate-200">
+          <div class="flex items-center gap-2 mb-4 mt-8 pb-2 border-b border-teal-200">
+            <div class="text-teal-600"><i data-lucide="clock"></i></div>
+            <h2 class="text-xl font-bold text-slate-800">Protocolo de Uso</h2>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-6 mb-8 print:gap-4">
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-emerald-100 print:border-slate-300 print:shadow-none">
+              <div class="flex items-center gap-2 mb-4 text-emerald-700">
+                <i data-lucide="check-circle-2"></i>
+                <h3 class="font-bold text-lg">Quando Oferecer</h3>
+              </div>
+              <ul class="space-y-3 print:space-y-2">
+                <li class="flex items-start gap-3 text-slate-700 text-sm">
+                  <span class="text-emerald-500 font-bold mt-0.5">✓</span>
+                  <span>Antes de <strong>transições previsíveis</strong> (banho, saída, carro).</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-700 text-sm">
+                  <span class="text-emerald-500 font-bold mt-0.5">✓</span>
+                  <span>Tempo curto: <strong>10 a 15 minutos</strong>.</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-700 text-sm">
+                  <span class="text-emerald-500 font-bold mt-0.5">✓</span>
+                  <span>Sempre com um adulto por perto (mediação).</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow-sm border border-red-100 print:border-slate-300 print:shadow-none">
+              <div class="flex items-center gap-2 mb-4 text-red-700">
+                <i data-lucide="x-circle"></i>
+                <h3 class="font-bold text-lg">O Que Evitar</h3>
+              </div>
+              <ul class="space-y-3 print:space-y-2">
+                <li class="flex items-start gap-3 text-slate-700 text-sm">
+                  <span class="text-red-500 font-bold mt-0.5">✕</span>
+                  <span><strong>Nunca usar na crise.</strong> A tela não deve ser usada para “parar o choro” agudo.</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-700 text-sm">
+                  <span class="text-red-500 font-bold mt-0.5">✕</span>
+                  <span>Filmes longos de uma só vez (divida em partes).</span>
+                </li>
+                <li class="flex items-start gap-3 text-slate-700 text-sm">
+                  <span class="text-red-500 font-bold mt-0.5">✕</span>
+                  <span>Conteúdos agitados antes de dormir.</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+          <div class="bg-slate-800 text-slate-200 p-6 rounded-xl text-center print:bg-slate-100 print:text-slate-800 print:border print:border-slate-300">
+            <h4 class="font-bold text-lg mb-2 text-white print:text-slate-800">Lembrete Importante</h4>
+            <p class="text-sm opacity-90 mb-4 max-w-2xl mx-auto">
+              Não existe conteúdo “mágico”. O segredo é observar a reação da Helô.
+              Se aumentar a agitação, ansiedade ou rigidez, o conteúdo deve ser retirado, mesmo que esteja nesta lista.
+            </p>
+            <div class="inline-block px-4 py-1 border border-slate-600 rounded-full text-xs font-mono text-slate-400 print:border-slate-400 print:text-slate-600">
+              Recurso de Apoio à Rotina
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Footer -->
+      <div class="bg-slate-100 p-6 text-center text-sm border-t border-slate-200 print:bg-white print:text-slate-600 print:border-t-2 print:p-4">
+        <p class="font-bold text-slate-700 text-base mb-2 print:text-black">
+          Elaborado por: Juliana Bragança – Terapeuta Ocupacional
+        </p>
+        <p class="text-slate-500 text-xs print:text-slate-400">
+          Este material é um guia terapêutico auxiliar personalizado. Consulte o profissional responsável em caso de dúvidas.
+        </p>
+      </div>
+
+    </div>
+
+    <script>
+      // render lucide icons
+      lucide.createIcons();
+
+      const tabGuia = document.getElementById('tab-guia');
+      const tabRegras = document.getElementById('tab-regras');
+      const viewGuia = document.getElementById('view-guia');
+      const viewRegras = document.getElementById('view-regras');
+
+      function setTab(which) {
+        const active = 'text-teal-600 border-b-2 border-teal-600 bg-teal-50/50';
+        const inactive = 'text-slate-400 hover:text-slate-600';
+
+        if (which === 'guia') {
+          tabGuia.className = `flex-1 py-4 text-sm font-bold uppercase tracking-wide transition-colors ${active}`;
+          tabRegras.className = `flex-1 py-4 text-sm font-bold uppercase tracking-wide transition-colors ${inactive}`;
+          viewGuia.classList.remove('hidden'); viewGuia.classList.add('block');
+          viewRegras.classList.add('hidden'); viewRegras.classList.remove('block');
+        } else {
+          tabRegras.className = `flex-1 py-4 text-sm font-bold uppercase tracking-wide transition-colors ${active}`;
+          tabGuia.className = `flex-1 py-4 text-sm font-bold uppercase tracking-wide transition-colors ${inactive}`;
+          viewRegras.classList.remove('hidden'); viewRegras.classList.add('block');
+          viewGuia.classList.add('hidden'); viewGuia.classList.remove('block');
+        }
+        // re-render icons (needed because DOM changes)
+        lucide.createIcons();
+      }
+
+      tabGuia.addEventListener('click', () => setTab('guia'));
+      tabRegras.addEventListener('click', () => setTab('regras'));
+    </script>
+  </body>
+</html>
